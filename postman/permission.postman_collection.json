@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "572c2ea0-fbb9-466e-9cfd-274648c2b581",
+		"name": "permission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37113550",
+		"_collection_link": "https://grey-shadow-464314.postman.co/workspace/Team-Workspace~dbe44859-e98e-4abd-8efb-347f420b5f06/collection/37113550-572c2ea0-fbb9-466e-9cfd-274648c2b581?action=share&source=collection_link&creator=37113550"
+	},
+	"item": [
+		{
+			"name": "Create-permission-and-role",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ1OTcxOCwiZXhwIjoxNzIxNzE4OTE4fQ.bPj3Ksh029meDkD6Muf2lmdwk27j4a4qr7Fr8WqGZrc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"Nhân viên\",\r\n    \"permission\": {\r\n        \"user\": [\r\n            \"create\",\r\n            \"read\",\r\n            \"update\"\r\n        ],\r\n        \"role\": [\r\n            \"create\",\r\n            \"read\",\r\n            \"update\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/create-permission-role",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"create-permission-role"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create-permission",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"659ba7c62b611171a5347a97\",\r\n    \"action\": [\r\n        \"create\",\r\n        \"read\"\r\n    ],\r\n    \"subject\": \"user\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/65a0a995aa7ea10ac4d16961",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"65a0a995aa7ea10ac4d16961"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update-permission-by-role-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"role\": \"Nhân Viên 2\",\r\n    \"permission\": {\r\n        \"user\": [\r\n            \"create\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/update-permission-by-role-id/669b65dfe147bce4ee68c6a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"update-permission-by-role-id",
+						"669b65dfe147bce4ee68c6a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/65a0a995aa7ea10ac4d16961",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"65a0a995aa7ea10ac4d16961"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-all",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-all-by-role-id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/get-all-by-role-id/669b65dfe147bce4ee68c6a2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"get-all-by-role-id",
+						"669b65dfe147bce4ee68c6a2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwidXNlcl9pZCI6IjY2OWIzMjIxYjYxYWY3MmNlMzNmNzA0ZSIsImlhdCI6MTcyMTQ0NzM5OCwiZXhwIjoxNzIxNzA2NTk4fQ.-V0Vlf9KJab4yqc2YdmCYauBPMIYj3Ip3syroI-06Ss",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8192/api/v1/permissions/65a0a995aa7ea10ac4d16961",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"permissions",
+						"65a0a995aa7ea10ac4d16961"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

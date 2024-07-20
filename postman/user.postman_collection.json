@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "5d64abdc-3851-4218-98be-e35d03ec6622",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37113550",
+		"_collection_link": "https://grey-shadow-464314.postman.co/workspace/Team-Workspace~dbe44859-e98e-4abd-8efb-347f420b5f06/collection/37113550-5d64abdc-3851-4218-98be-e35d03ec6622?action=share&source=collection_link&creator=37113550"
+	},
+	"item": [
+		{
+			"name": "Sign-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"123123@\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8192/api/v1/auths/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"auths",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign-up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin_11\",\r\n    \"password\": \"123123@\",\r\n    \"fullname\": \"Phạm Ngọc Phong\",\r\n    \"role\": \"659ba7c62b611171a5347a97\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8192/api/v1/auths/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8192",
+					"path": [
+						"api",
+						"v1",
+						"auths",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
